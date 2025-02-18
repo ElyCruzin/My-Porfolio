@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Elisa Cruz">
+    <meta name="description"
+        content="Hello, I am Elisa Cruz and I am a Frontend Web Developer. Can I help you build your site?">
+    <meta name="keywords" content="site, website builder, coder, developer">
+    <meta name="theme-color" content="#efdfbd">
+    <title>Elisa Cruz</title>
+    <meta name="robots" content="index,follow">
+
+    <!-- ~~~~~~~~~~ TWITTER CARD TAGS ~~~~~~~~~~ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+    <meta name="twitter:title" content="Elisa Cruz">
+    <meta name="twitter:description"
+        content="Elisa Cruz, Frontend Web Develoer. Let’s build your site with authentic & intentional connection.">
+    <meta name="twitter:image" content="Images/logo.svg">
+
+    <!-- ~~~~~~~~~~ OPEN GRAPH META TAGS ~~~~~~~~~~ -->
+    <meta property="og:title" content="Elisa Cruz">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Images/logo.svg">
+    <meta property="og:url" content="https://">
+    <meta property="og:description"
+        content="Elisa Cruz, Frontend Web Develoer. Let’s build your site with authentic & intentional connection.">
+    <!-- ~~~~~~~~~~FAVICON ~~~~~~~~~~ -->
+    <link rel="shortcut icon" href="Images/icon.png">
+
+    <!-- ~~~~~~~~~~ GOOGLE FONTS ~~~~~~~~~~ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Molle:ital@1&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a id="skip" href="#main-content">Skip to Main Content</a>
+        <nav>
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <picture>
+                    <source srcset="Images/logo.png" media="(min-width: 850px)" width="300">
+                    <img src="Images/logo-mobile.png" alt="" width="200">
+                </picture>
+                <!-- Navigation links (hidden by default) -->
+                <ul id="myLinks">
+                    <li><a href="#main-content" class="">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <div class="hamburger">
+                    <div class="icon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section id="home-grid">
+            <div id="home-div1">
+             <img src="Images/home-dsgn.png" id="home-dsgn">
+                <h1 class="home-h1">Frontend Developer.</h1>
+                <p id="home-p">Let’s build your site with<br> authentic & intentional<br> <span>Connection.</span></p>
+                <img id="home-png" src="Images/home-icon.png">
+            </div>
+            <div id="home-div2">
+                <picture>
+                    <source srcset="Images/home-img-mobile.JPG" media="(min-width: 850px)" width="60%">
+                    <img src="Images/home-img-mobile.JPG" alt="" width="100%">
+                </picture>
+                <img>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div id="projects-grid">
+                <div class="projects-div">
+                    <img src="Images/groom1.png" alt="" class="project-png">
+                    <h3>Groomed for Success:<br> A Pet Salon Rebrand</h3>
+                    <button>See More</button>
+                </div>
+                <div class="projects-div">
+                    <img src="Images/taco1.png" alt="" class="project-png">
+                    <h3>Street Tacos Recipes<br> Goes Digital</h3>
+                    <button>See More</button>
+                </div>
+                <div class="projects-div">
+                    <img src="Images/travel1.png" alt="" class="project-png">
+                    <h3>Wunderlust Travel—<br>
+                        Birth of a Brand</h3>
+                    <button>See More</button>
+                </div>
+            </div>
+        </section>
+        <!--- Project Detail POP UP --->
+        <section id="project-pop1" class="hide">
+            <h2>Groomed for Success:
+                A Pet Salon Rebrand</h2>
+            <!--- Need arousal Image Holder --->
+            <div id="img-gal">
+                <figure>
+                    <img src="">
+                </figure>
+                <h4>Description</h4>
+                <figcaption></figcaption>
+                <svg></svg>
+                <div id="circles">
+                    <div class="circle current"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <h3>Background</h3>
+            <p></p>
+            <h3>Problem</h3>
+            <p></p>
+            <h3>Process</h3>
+            <p></p>
+            <h3>Results</h3>
+            <p></p>
+        </section>
+        <section id="about">
+            <div class="cream-bg">
+                <picture>
+                    <source srcset="Images/about-img.JPG" media="(min-width: 850px)" width="60%">
+                    <img id="about-img" src="Images/about-img.JPG" alt="" width="100%">
+                </picture>
+                <h2>Learn More About Me</h2>
+                <p class="text">Hello! I am a Frontend Web Developer who is passionate about helping others create their best site!
+                </p>
+                <p class="text">I am originally from Phoenix, Arizona and have gotten the opportunity to travel and live abroad while
+                    serving in the United States Air Force the last 8 years.</p>
+                <p class="text">I will soon earn my Web and Internet Development Bachelors of Applied Science from Arizona State
+                    University.</p>
+            </div>
+            <div>
+                <h2>What I Value</h2>
+                <div id="value-grid">
+                    <div id="value-div1">
+                        <img src="Images/value1.png" class="value-png">
+                        <p class="value">Building <span>Authentic</span> and Creative Designs.</p>
+                    </div>
+                    <div id="value-div2">
+                        <img src="Images/value2.png" class="value-png">
+                        <p class="value">Focusing on <span>Accessibility</span> and Inclusivity.</p>
+                    </div>
+                    <div id="value-div3">
+                        <img src="Images/value3.png" class="value-png">
+                        <p class="value">Increasing <span>Connection</span> that Inspires Loyalty.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Get in Touch!</h2>
+            <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+                <div id="name.email">
+                    <label for="fName">Your Name</label>
+                    <input type="text" name="name" id="name" autocomplete="given-name"
+                        placeholder="John Doe" required>
+                    <!-- custom input styles from https://moderncss.dev/custom-css-styles-for-form-inputs-and-textareas/ -->
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" autocomplete="email"
+                        placeholder="Example@gmail.com" required>
+                </div>
+                <div id="message">
+                    <label for="message">Your Message</label>
+                    <textarea name="message" id="message"
+                        placeholder="Hi, I have a project I would like your help on.."></textarea>
+                    <button name="mySubmit" type="submit" id="mySubmit">Submit</buttton>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="Images/footer-icon.png">
+        <small>Elisa Cruz &#169; Copyright 2025.</small>
+    </footer>
+</body>
+
+</html>
