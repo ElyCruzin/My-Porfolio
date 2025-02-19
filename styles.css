@@ -49,7 +49,7 @@ h2 {
 }
 h3 {
     text-align: center;
-    font-size: clamp(1rem,4vw, 2rem); 
+    font-size: clamp(1.5rem,4vw, 2rem); 
 }
 .value {
     font-size: clamp(1.4rem, 3.5vw, 1.5rem); 
@@ -257,7 +257,7 @@ button:hover, input[type="submit"]:hover{
 
 /* PROJECTS STYLES START */
 #projects {
-    margin: 50px 0;
+    margin: 20px 0;
 }
 #projects-grid {
     display: flex;
@@ -266,7 +266,7 @@ button:hover, input[type="submit"]:hover{
     
 }
 .projects-div {
-   margin:50px 0;
+   margin:40px 0;
 }
 .project-png {
     width: 200px;
@@ -302,9 +302,13 @@ button:hover, input[type="submit"]:hover{
 
 #value-grid  p {
     text-align: center;
+    margin-top: 5px;
+}
+#value-div1, #value-div2, #value-div3 {
+    margin: 20px;
 }
 .value-png {
-    width: 100px;
+    width: 80px;
     display: block;
     margin: 0 auto;
 }
@@ -316,8 +320,7 @@ form {
     flex-direction: column;
    align-items: center;
     }
-
-    label, input, textarea {
+  label, input, textarea {
         display: block;
         border: none;
         margin: 10px;
@@ -325,17 +328,17 @@ form {
         color: var(--brown-link);
         font-weight: 600;
     }
-    input, textarea {
+input, textarea {
         padding: 20px 0;
         border-bottom: 2px solid var(--brown-link);
         width: 50vw;
     }
-    input::placeholder, textarea::placeholder {
+input::placeholder, textarea::placeholder {
         font-weight: 0;
         font-size: smaller;
         font-family: sans-serif;
     }
-    button[type="submit"] {
+button[type="submit"] {
         width: 80%;
         margin: 60px auto;
 
@@ -343,7 +346,16 @@ form {
 /* CONTACT STYLES END */
 
 /* FOOTER STYLES START */
-
+footer {
+    background-color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+small {
+    margin: 30px;
+    font-style: italic;
+}
 /* FOOTER STYLES END */
 .circle {
     width: 10px;
