@@ -42,7 +42,7 @@
     <script src="script.js"></script>
 </head>
 
-<body>
+<body id="home">
     <header>
         <a id="skip" href="#main-content">Skip to Main Content</a>
         <nav>
@@ -54,7 +54,7 @@
                 </picture>
                 <!-- Navigation links (hidden by default) -->
                 <ul id="myLinks">
-                    <li><a href="#main-content" class="">Home</a></li>
+                    <li><a href="#home" class="">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -73,7 +73,7 @@
         <section id="home-grid">
             <div id="home-div1">
              <img src="Images/home-dsgn.png" id="home-dsgn">
-                <h1 class="home-h1">Frontend Developer.</h1>
+                <h1 class="home-h1">Frontend Developer</h1>
                 <p id="home-p">Let’s build your site with<br> authentic & intentional<br> <span>Connection.</span></p>
                 <img id="home-png" src="Images/home-icon.png">
             </div>
@@ -89,51 +89,75 @@
             <h2>My Projects</h2>
             <div id="projects-grid">
                 <div class="projects-div">
-                    <img src="Images/groom1.png" alt="" class="project-png">
+                    <img src="Images/groom5.png" alt="" class="project-png">
                     <h3>Groomed for Success:<br> A Pet Salon Rebrand</h3>
-                    <button>See More</button>
+                    <button class="see-more-btn" data-project="project1">See More</button>
+
+
+
                 </div>
                 <div class="projects-div">
                     <img src="Images/taco1.png" alt="" class="project-png">
                     <h3>Street Tacos Recipes<br> Goes Digital</h3>
-                    <button>See More</button>
+                    <button class="see-more-btn" data-project="project2">See More</button>
                 </div>
                 <div class="projects-div">
                     <img src="Images/travel1.png" alt="" class="project-png">
                     <h3>Wunderlust Travel—<br>
                         Birth of a Brand</h3>
-                    <button>See More</button>
+                        <button class="see-more-btn" data-project="project3">See More</button>
                 </div>
             </div>
         </section>
-        <!--- Project Detail POP UP --->
-        <section id="project-pop1" class="hide">
-            <h2>Groomed for Success:
-                A Pet Salon Rebrand</h2>
-            <!--- Need arousal Image Holder --->
-            <div id="img-gal">
-                <figure>
-                    <img src="">
-                </figure>
-                <h4>Description</h4>
-                <figcaption></figcaption>
-                <svg></svg>
-                <div id="circles">
-                    <div class="circle current"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div>
-            </div>
-            <h3>Background</h3>
-            <p></p>
-            <h3>Problem</h3>
-            <p></p>
-            <h3>Process</h3>
-            <p></p>
-            <h3>Results</h3>
-            <p></p>
+        <!------------------------------Project Detail POP UP START-------------------->
+        <section id="project-pop-up" class="hide">
+            <!-- Project Pop-Up Container -->
+<!-- Project Pop-Up Container -->
+<div id="project-pop-up" class="popup-overlay">
+
+    <div class="popup-content">
+        <div>
+        <h2 id="popup-title">Project Title</h2>
+        <span id="popup-close-btn" class="close">&times;</span> <!-- X button -->
+
+        <!-- Image Slider Appears FIRST -->
+        <div class="popup-slider">
+            <button id="popup-prev" class="slider-btn">❮</button>
+            <img id="popup-img" src="Images/groom1.png" alt="Project Image">
+            <button id="popup-next" class="slider-btn">❯</button>
+        </div>
+
+        <!-- Dots for Image Navigation -->
+        <div id="popup-dots" class="dots-container"></div>
+        <h4 id="descrption">Descrption</h4>
+        <p id="popup-slide-text">Image description goes here.</p>
+    </div>
+    <div id="pop-info">
+        <!-- Structured Content BELOW the Slider -->
+        <h3>Background</h3>
+        <p id="popup-background"></p>
+
+        <h3>Problem</h3>
+        <p id="popup-problem"></p>
+
+        <h3>Process</h3>
+        <p id="popup-process"></p>
+
+        <h3>Result</h3>
+        <p id="popup-result"></p>
+
+        <!-- Bottom Buttons -->
+        <div class="popup-buttons">
+            <button id="popup-close-btn2">Close</button>
+            <button id="popup-next-btn">Next</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+
         </section>
+        <!------------------------------Project Detail POP UP END -------------------->
         <section id="about">
             <div class="cream-bg">
                 <picture>
@@ -141,11 +165,11 @@
                     <img id="about-img" src="Images/about-img.JPG" alt="" width="100%">
                 </picture>
                 <h2>Learn More About Me</h2>
-                <p class="text">Hello! I am a Frontend Web Developer who is passionate about helping others create their best site!
+                <p class="about-text">Hello! I am a Frontend Web Developer who is passionate about helping others create their best site!
                 </p>
-                <p class="text">I am originally from Phoenix, Arizona and have gotten the opportunity to travel and live abroad while
+                <p class="about-text">I am originally from Phoenix, Arizona and have gotten the opportunity to travel and live abroad while
                     serving in the United States Air Force the last 8 years.</p>
-                <p class="text">I will soon earn my Web and Internet Development Bachelors of Applied Science from Arizona State
+                <p class="about-text">I will soon earn my Web and Internet Development Bachelors of Applied Science from Arizona State
                     University.</p>
             </div>
             <div>
