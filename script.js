@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 ]
             },
             project3: {
-                title: "Wunderlust Travel—How I Brought Their Brand to Life",
+                title: "Wunderlust Travel—Birth of a Brand",
                 background: "Wunderlust Travel is a travel group that wanted a site to build their brand and attract more clients. They had a strong vision but needed an online presence to bring it to life.",
                 problem: "They didn’t have a website, which meant they were missing out on potential travelers. Without a central place to promote their destinations and services, it was harder to build trust and connect with their audience. They needed a site that not only looked good, but also made it easy for visitors to explore and book their next adventure.",
                 process: "The client came to me with wireframes that outlined what they wanted. From there, I took a mobile-first approach, making sure the site was user-friendly and responsive. Since most people browse travel sites on their phones, I focused on seamless navigation, high-quality visuals, and a clean design with destination highlights.",
@@ -172,6 +172,22 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("popup-next").addEventListener("click", function () {
             plusPopupSlides(1);
         });
+
+        // Change img if 850px or more 
+        function updateImageSource() {
+            let image = document.getElementById("home-dsgn");
+            if (window.innerWidth >= 850) {
+                image.src = "Images/home-dsgn-lrg.png";
+            } else {
+                image.src = "Images/home-dsgn.png"; // Default image for smaller screens
+            }
+        }
+    
+            // Run on page load
+             updateImageSource();
+    
+            // Run on window resize
+             window.addEventListener("resize", updateImageSource);
     });
     
     

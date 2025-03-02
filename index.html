@@ -45,15 +45,22 @@
 <body id="home">
     <header>
         <a id="skip" href="#main-content">Skip to Main Content</a>
-        <nav>
+        <nav class="topnav">
             <!-- Top Navigation Menu -->
-            <div class="topnav">
+        
                 <picture>
                     <source srcset="Images/logo.png" media="(min-width: 850px)" width="300">
                     <img src="Images/logo-mobile.png" alt="" width="200">
                 </picture>
                 <!-- Navigation links (hidden by default) -->
                 <ul id="myLinks">
+                    <li><a href="#home" class="">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <ul id="dsk-nav">
                     <li><a href="#home" class="">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#about">About Me</a></li>
@@ -93,8 +100,6 @@
                     <h3>Groomed for Success:<br> A Pet Salon Rebrand</h3>
                     <button class="see-more-btn" data-project="project1">See More</button>
 
-
-
                 </div>
                 <div class="projects-div">
                     <img src="Images/taco2.png" alt="" class="project-png">
@@ -116,8 +121,9 @@
 <div id="project-pop-up" class="popup-overlay">
 
     <div class="popup-content">
-        <div>
         <h2 id="popup-title">Project Title</h2>
+        <div>
+      
         <span id="popup-close-btn" class="close">&times;</span> <!-- X button -->
 
         <!-- Image Slider Appears FIRST -->
@@ -148,8 +154,8 @@
 
         <!-- Bottom Buttons -->
         <div class="popup-buttons">
-            <button id="popup-close-btn2">Close</button>
-            <button id="popup-next-btn">Next</button>
+            <button class="see-more-btn" id="popup-close-btn2">Close</button>
+            <button class="see-more-btn" id="popup-next-btn">Next</button>
         </div>
     </div>
     </div>
@@ -162,7 +168,7 @@
             <div class="cream-bg">
                 <picture>
                     <source srcset="Images/about-img.JPG" media="(min-width: 850px)" width="60%">
-                    <img id="about-img" src="Images/about-img.JPG" alt="" width="100%">
+                    <img id="about-img" src="Images/about-img-mobile.JPG" alt="" width="100%">
                 </picture>
                 <div id="about-div">
                 <h2>Learn More About Me</h2>
@@ -195,20 +201,24 @@
         <section id="contact">
             <h2>Get in Touch!</h2>
             <form method="post" action="https://wp.zybooks.com/form-viewer.php">
-                <div id="name.email">
+                <div id="form-grid">
+                    <div id="name-div">
                     <label for="fName">Your Name</label>
                     <input type="text" name="name" id="name" autocomplete="given-name"
                         placeholder="John Doe" required>
+                    </div>
+                    <div id="email-div">
                     <!-- custom input styles from https://moderncss.dev/custom-css-styles-for-form-inputs-and-textareas/ -->
                     <label for="email">Email Address</label>
                     <input type="email" name="email" id="email" autocomplete="email"
                         placeholder="Example@gmail.com" required>
+                    </div>
                 </div>
                 <div id="message">
                     <label for="message">Your Message</label>
                     <textarea name="message" id="message"
                         placeholder="Hi, I have a project I would like your help on.."></textarea>
-                    <button name="mySubmit" type="submit" id="mySubmit">Submit</buttton>
+                    <button name="mySubmit" type="submit" id="mySubmit" class="see-more-btn">Submit</buttton>
                 </div>
             </form>
         </section>
